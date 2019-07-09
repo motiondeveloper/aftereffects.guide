@@ -15,17 +15,12 @@
         --color-light: #F7EDFF;
       }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         color: var(--color-dark);
         background-color:var(--color-light);
-        box-sizing: border-box;
-        text-align: center;
-      }
-
-      main {
         width: 100%;
-        margin-top: 20%;
-        max-width: 80vmin;
+        max-width: 80vw;
+        margin-top: 16vmin;
         margin-left: auto;
         margin-right: auto;
       }
@@ -38,10 +33,11 @@
 
       h2 {
         font-size: 32px;
-        font-weight: 500;
+        font-weight: bold;
         margin-top: 0px;
-        margin-bottom: 18px;
+        margin-bottom: 12px;
         white-space: nowrap;
+        transition: all linear 0.1s;
       }
 
       p {
@@ -56,20 +52,18 @@
         color: var(--color-dark);
       }
 
-      a:hover {
-        color: var(--color-dark);
-      }
-
       .linkbox {
         box-sizing: border-box;
         display: block;
         width: 100%;
-        padding: 16px 24px;
-        transition: all 0.4s cubic-bezier(.37,.96,0,1) 0s;
       }
 
       .linkbox:not(:last-child) {
-        margin-bottom: 16px;
+        margin-bottom: 48px;
+      }
+
+      .linkbox:hover h2 {
+        color: var(--color-med);
       }
 
       .link-arrow {
@@ -95,28 +89,24 @@
       }
 
       footer a:hover {
-        text-decoration-color: var(--color-med);
+        color: var(--color-med);
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>aftereffects.guide</h1>
+      <h1>AfterEffects.Guide</h1>
         <a href="https://learn.aftereffects.guide" aria-label="Learn After Effects Link" class="linkbox">
-          <div>
-            <h2>Learn After Effects<span class="link-arrow">➞</span></h2>
-            <p>The complete guide to learning Adobe After Effects.</p>
-          </div>
+          <h2>Learn After Effects<span class="link-arrow">➞</span></h2>
+          <p>The complete guide to learning Adobe After Effects.</p>
         </a>
         <a href="https://organized.aftereffects.guide" aria-label="Organize After Effects Link" class="linkbox">
-          <div>
-            <h2>Organize After Effects<span class="link-arrow">➞</span></h2>
-            <p>After Effects project organization and workflow best practices.</p>
-          </div>
+          <h2>Organize After Effects<span class="link-arrow">➞</span></h2>
+          <p>After Effects project organization and workflow best practices.</p>
         </a>
       </main>
+      <footer>
+        <p>Created by <a href="https://github.com/motiondeveloper">Motion Developer</a></p>
+      </footer>
     </body>
-  <footer>
-    <p>Created by <a href="https://github.com/motiondeveloper">Motion Developer</a></p>
-  </footer>
 </html>

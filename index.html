@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+    <meta content='width=device-width' name='viewport'>
+    <meta charset='utf-8'/>
+    <meta name='theme-color' content='#000000'/>
+    <link rel='stylesheet' href='main.css'>
+    <title>The After Effects Guide - Learn and Organize Adobe After Effects</title>
+    <meta name='description' content='After Effects Guide Landing Page. The complete guide to learning After Effects, and project and workflow best practices.'/>
+    <style>
+      :root {
+        --color-dark: #2A0E4F;
+        --color-med: #D7A6FD;
+        --color-shadow: rgb(227, 191, 252);
+        --color-light: #F7EDFF;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        color: var(--color-dark);
+        background-color:var(--color-light);
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      main {
+        width: 100%;
+        margin-top: 20%;
+        max-width: 80vmin;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1 {
+        font-size: 8vmin;
+        margin-bottom: 64px;
+        text-decoration: underline var(--color-med);
+      }
+
+      h2 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 18px;
+        white-space: nowrap;
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 130%;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--color-dark);
+      }
+
+      a:hover {
+        color: var(--color-dark);
+      }
+
+      .linkbox {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        background-color: var(--color-light);
+        padding: 16px 24px;
+        border-radius: 8px;
+        transition: all 0.4s cubic-bezier(.37,.96,0,1) 0s;
+      }
+
+      .linkbox:not(:last-child) {
+        margin-bottom: 16px;
+      }
+
+      .linkbox:hover {
+        transform: scale(1.02) translateY(-2px);
+        border: 2px solid var(--color-med);
+        box-shadow: 0 12px 24px -12px var(--color-shadow);
+      }
+
+      .link-arrow {
+        display: inline-block;
+        color: var(--color-med);
+        margin-left: 8px;
+        transition: all 0.4s cubic-bezier(.28,1.4,.17,1.1) 0s;
+      }
+
+      .linkbox:hover .link-arrow {
+       transform: translateX(12px);
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+      }
+
+      footer a {
+        text-decoration: underline;
+      }
+
+      footer a:hover {
+        text-decoration-color: var(--color-med);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>aftereffects.guide</h1>
+        <a href="https://learn.aftereffects.guide" aria-label="Learn After Effects Link" class="linkbox">
+          <div>
+            <h2>Learn After Effects<span class="link-arrow">➞</span></h2>
+            <p>The complete guide to learning Adobe After Effects.</p>
+          </div>
+        </a>
+        <a href="https://organize.aftereffects.guide" aria-label="Organize After Effects Link" class="linkbox">
+          <div>
+            <h2>Organize After Effects<span class="link-arrow">➞</span></h2>
+            <p>After Effects project organization and workflow best practices.</p>
+          </div>
+        </a>
+      </main>
+    </body>
+  <footer>
+    <p>Created by <a href="https://github.com/motiondeveloper">Motion Developer</a></p>
+  </footer>
+</html>
